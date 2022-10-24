@@ -59,6 +59,12 @@ function TodosList() {
     updateTodoMutation.mutate({ _id: e._id, status: !e.status });
   }
 
+  if (isLoading) {
+    return (
+      <p>Loading...</p>
+    )
+  }
+
   return (
     <div className=" flex  flex-col gap-3 w-2/4 m-auto bg-teal-700 my-10 items-center align-middle text-white p-6">
       <h3 className="text-2xl font-bold font-mono mt-5">Todo List</h3>
