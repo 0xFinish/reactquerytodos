@@ -61,7 +61,7 @@ function TodosList() {
 
   if (isLoading) {
     return (
-      <p>Loading...</p>
+      <p className="text-white w-20 m-auto">Loading...</p>
     )
   }
 
