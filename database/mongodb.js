@@ -3,7 +3,7 @@ require("dotenv").config()
 
 const Mongo = process.env.MONGODB
 
-const url = Mongo
+const url = process.env.MONGODB
 
 const client = new MongoClient(url)
 const collection = client.db("todos").collection("todos")
